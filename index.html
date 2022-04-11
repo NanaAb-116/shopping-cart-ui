@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart UI</title>
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="container-fluid main">
+      <div class="row">
+        <div class="col-md-2">
+          <h3 class="text-center">Sizes:</h3>
+          <button type="button" id="size-btn">XS</button>
+          <button type="button" id="size-btn">S</button>
+          <button type="button" id="size-btn">M</button>
+          <button type="button" id="size-btn">ML</button>
+          <button type="button" id="size-btn">L</button>
+          <button type="button" id="size-btn">XL</button>
+          <button type="button" id="size-btn">XXL</button>
+
+          <div class="text-center">
+            <p>Leave a star on Github if this repository was useful :)</p>
+            <button type="button" class="star">&#9733 Star</button>
+            <button type="button" class="star">848</button>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-6 ml-auto">
+              <p>"16" Product(s) found.</p>
+            </div>
+            <div class="col-md-6 filter">
+              <p class="p-2">Order by</p>
+              <div class="dropdown">
+                <a
+                  class="btn btn-outline-dark dropdown-toggle filter_btn"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Select
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Newest</a>
+                  <a class="dropdown-item" href="#">Sizes</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 my-3">
+              <div id="cart" class="card text-center">
+                <p class="free">Free Shipping</p>
+                <img
+                  src="https://azmadeu.github.io/react-shopping-cart/static/media/Cat-Tee-Black-T-shirt.4edb5154.jpg"
+                  class="card-img-top"
+                  alt="Cat Tee Black T-shirt"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Dark Thug Blue-Navy T-Shirt</h5>
+                  <div class="yellow-line"></div>
+                  <p class="main-price">
+                    <small>$</small>
+                    <span style="font-weight: bold">29</span><small>.90</small>
+                  </p>
+                  <span class="grayedout">or 9 x$1.21</span>
+                  <div class="btn bg-dark w-100 text-light add">
+                    Add To Cart
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 my-3">
+              <div id="cart" class="card text-center">
+                <p class="free">Free Shipping</p>
+                <img
+                  src="https://azmadeu.github.io/react-shopping-cart/static/media/DarkThug.8da09d0b.jpg"
+                  class="card-img-top"
+                  alt="Cat Tee Black T-shirt"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Cat Tee Black T-shirt</h5>
+                  <div class="yellow-line"></div>
+                  <p class="main-price">
+                    <small>$</small>
+                    <span style="font-weight: bold">10</span><small>.19</small>
+                  </p>
+                  <span class="grayedout">or 9 x$1.21</span>
+                  <div class="btn bg-dark w-100 text-light add">
+                    Add To Cart
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 my-3">
+              <div id="cart" class="card text-center">
+                <p class="free">Free Shipping</p>
+                <img
+                  src="https://azmadeu.github.io/react-shopping-cart/static/media/Sphynx.b047a598.jpg"
+                  class="card-img-top"
+                  alt="Cat Tee Black T-shirt"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Sphynx Tie Dye Wine T-Shirt</h5>
+                  <div class="yellow-line"></div>
+                  <p class="main-price">
+                    <small>$</small>
+                    <span style="font-weight: bold">9</span><small>.00</small>
+                  </p>
+                  <span class="grayedout">or 3 x$3.00</span>
+                  <div class="btn bg-dark w-100 text-light add">
+                    Add To Cart
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 my-3">
+              <div id="cart" class="card text-center">
+                <p class="free">Free Shipping</p>
+                <img
+                  src="https://azmadeu.github.io/react-shopping-cart/static/media/Skuul.cb8727d9.jpg"
+                  class="card-img-top"
+                  alt="Cat Tee Black T-shirt"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Skull</h5>
+                  <div class="yellow-line"></div>
+                  <p class="main-price">
+                    <small>$</small>
+                    <span style="font-weight: bold">14</span><small>.00</small>
+                  </p>
+                  <span class="grayedout">or 5 x$2.80</span>
+                  <div class="btn bg-dark w-100 text-light add">
+                    Add To Cart
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 my-3">
+              <div id="cart" class="card text-center">
+                <p class="free">Free Shipping</p>
+                <img
+                  src="https://azmadeu.github.io/react-shopping-cart/static/media/WineSkuul.c9fb4794.jpg"
+                  class="card-img-top"
+                  alt="Cat Tee Black T-shirt"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Wine Skul T-Shirt</h5>
+                  <div class="yellow-line"></div>
+                  <p class="main-price">
+                    <small>$</small>
+                    <span style="font-weight: bold">13</span><small>.25</small>
+                  </p>
+                  <span class="grayedout">or 5 x$4.42</span>
+                  <div class="btn bg-dark w-100 text-light add">
+                    Add To Cart
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 my-3">
+              <div id="cart" class="card text-center">
+                <p class="free">Free Shipping</p>
+                <img
+                  src="https://azmadeu.github.io/react-shopping-cart/static/media/ShortSleeveT-Shirt.854f9ebd.jpg"
+                  class="card-img-top"
+                  alt="Cat Tee Black T-shirt"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Short Sleeve T-Shirt</h5>
+                  <div class="yellow-line"></div>
+                  <p class="main-price">
+                    <small>$</small>
+                    <span style="font-weight: bold">75</span><small>.00</small>
+                  </p>
+                  <span class="grayedout">or 5 x$15.00</span>
+                  <div class="btn bg-dark w-100 text-light add">
+                    Add To Cart
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 my-3">
+              <div id="cart" class="card text-center">
+                <p class="free">Free Shipping</p>
+                <img
+                  src="https://azmadeu.github.io/react-shopping-cart/static/media/BornOnTheStreet.a5707e84.jpg"
+                  class="card-img-top"
+                  alt="Cat Tee Black T-shirt"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Born On The Streets</h5>
+                  <div class="yellow-line"></div>
+                  <p class="main-price">
+                    <small>$</small>
+                    <span style="font-weight: bold">25</span><small>.90</small>
+                  </p>
+                  <span class="grayedout">or 12 x$2.16</span>
+                  <div class="btn bg-dark w-100 text-light add">
+                    Add To Cart
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 my-3">
+              <div id="cart" class="card text-center">
+                <p class="free">Free Shipping</p>
+                <img
+                  src="https://azmadeu.github.io/react-shopping-cart/static/media/SphynxTieDyeGreyT-Shirt.7bbbf40e.jpg"
+                  class="card-img-top"
+                  alt="Cat Tee Black T-shirt"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Sphynx Tie Dye Grey T-Shirt</h5>
+                  <div class="yellow-line"></div>
+                  <p class="main-price">
+                    <small>$</small>
+                    <span style="font-weight: bold">10</span><small>.90</small>
+                  </p>
+                  <span class="grayedout">or 9 x$1.21</span>
+                  <div class="btn bg-dark w-100 text-light add">
+                    Add To Cart
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 my-3">
+              <div id="cart" class="card text-center">
+                <p class="free">Free Shipping</p>
+                <img
+                  src="https://azmadeu.github.io/react-shopping-cart/static/media/WhiteDGK.76d63530.jpg"
+                  class="card-img-top"
+                  alt="Cat Tee Black T-shirt"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Danger Knife Grey</h5>
+                  <div class="yellow-line"></div>
+                  <p class="main-price">
+                    <small>$</small>
+                    <span style="font-weight: bold">14</span><small>.90</small>
+                  </p>
+                  <span class="grayedout">or 7 x$2.13</span>
+                  <div class="btn bg-dark w-100 text-light add">
+                    Add To Cart
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 my-3">
+              <div id="cart" class="card text-center">
+                <p class="free">Free Shipping</p>
+                <img
+                  src="https://azmadeu.github.io/react-shopping-cart/static/media/DangerKnife.16d87c7b.jpg"
+                  class="card-img-top"
+                  alt="Cat Tee Black T-shirt"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">White DGK Script Tee</h5>
+                  <div class="yellow-line"></div>
+                  <p class="main-price">
+                    <small>$</small>
+                    <span style="font-weight: bold">14</span><small>.90</small>
+                  </p>
+                  <span class="grayedout">or 7 x$2.13</span>
+                  <div class="btn bg-dark w-100 text-light add">
+                    Add To Cart
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 my-3">
+              <div id="cart" class="card text-center">
+                <p class="free">Free Shipping</p>
+                <img
+                  src="https://azmadeu.github.io/react-shopping-cart/static/media/Cat-Tee-Black-T-shirt(2).08690d27.jpg"
+                  class="card-img-top"
+                  alt="Cat Tee Black T-shirt"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Cat Tee Black T-shirt A</h5>
+                  <div class="yellow-line"></div>
+                  <p class="main-price">
+                    <small>$</small>
+                    <span style="font-weight: bold">14</span><small>.90</small>
+                  </p>
+                  <span class="grayedout">or 7 x$2.13</span>
+                  <div class="btn bg-dark w-100 text-light add">
+                    Add To Cart
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 my-3">
+              <div id="cart" class="card text-center">
+                <p class="free">Free Shipping</p>
+                <img
+                  src="https://azmadeu.github.io/react-shopping-cart/static/media/Tso3D.6ffa45d5.jpg"
+                  class="card-img-top"
+                  alt="Cat Tee Black T-shirt"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Tso 3D Short Sleeve T-Shirt A</h5>
+                  <div class="yellow-line"></div>
+                  <p class="main-price">
+                    <small>$</small>
+                    <span style="font-weight: bold">10</span><small>.90</small>
+                  </p>
+                  <span class="grayedout">or 9 x$1.21</span>
+                  <div class="btn bg-dark w-100 text-light add">
+                    Add To Cart
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 my-3">
+              <div id="cart" class="card text-center">
+                <p class="free">Free Shipping</p>
+                <img
+                  src="https://azmadeu.github.io/react-shopping-cart/static/media/ManTieDie.a998813f.jpg"
+                  class="card-img-top"
+                  alt="Cat Tee Black T-shirt"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Man Tie Dye Cinza Grey T-Shirt</h5>
+                  <div class="yellow-line"></div>
+                  <p class="main-price">
+                    <small>$</small>
+                    <span style="font-weight: bold">49</span><small>.90</small>
+                  </p>
+                  <span class="grayedout">or 10 x$4.90</span>
+                  <div class="btn bg-dark w-100 text-light add">
+                    Add To Cart
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 my-3">
+              <div id="cart" class="card text-center">
+                <p class="free">Free Shipping</p>
+                <img
+                  src="https://azmadeu.github.io/react-shopping-cart/static/media/CrazyMonkey.9d1a7699.jpg"
+                  class="card-img-top"
+                  alt="Cat Tee Black T-shirt"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Crazy Monkey Black T-Shirt</h5>
+                  <div class="yellow-line"></div>
+                  <p class="main-price">
+                    <small>$</small>
+                    <span style="font-weight: bold">22</span><small>.50</small>
+                  </p>
+                  <span class="grayedout">or 4 x$5.63</span>
+                  <div class="btn bg-dark w-100 text-light add">
+                    Add To Cart
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 my-3">
+              <div id="cart" class="card text-center">
+                <p class="free">Free Shipping</p>
+                <img
+                  src="https://azmadeu.github.io/react-shopping-cart/static/media/Tso3DBlack.d6803810.jpg"
+                  class="card-img-top"
+                  alt="Cat Tee Black T-shirt"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Tso 3D Black T-Shirt</h5>
+                  <div class="yellow-line"></div>
+                  <p class="main-price">
+                    <small>$</small>
+                    <span style="font-weight: bold">18</span><small>.70</small>
+                  </p>
+                  <span class="grayedout">or 4 x$4.67</span>
+                  <div class="btn bg-dark w-100 text-light add">
+                    Add To Cart
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 my-3">
+              <div id="cart" class="card text-center">
+                <p class="free">Free Shipping</p>
+                <img
+                  src="https://azmadeu.github.io/react-shopping-cart/static/media/CrazyMonkeyGrey.1fd27374.jpg"
+                  class="card-img-top"
+                  alt="Cat Tee Black T-shirt"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Crazy Monkey Grey</h5>
+                  <div class="yellow-line"></div>
+                  <p class="main-price">
+                    <small>$</small>
+                    <span style="font-weight: bold">134</span><small>.90</small>
+                  </p>
+                  <span class="grayedout">or 5 x$26.98</span>
+                  <div class="btn bg-dark text-light w-100 add">
+                    Add To Cart
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+  </body>
+</html>
